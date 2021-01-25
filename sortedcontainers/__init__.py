@@ -44,27 +44,27 @@ testing has 100% coverage with unit tests and hours of stress.
 :license: Apache 2.0, see LICENSE for more details.
 
 """
+# __main__.pyで邪魔になるのでコメントアウト
+# 
+# from .sortedlist import SortedList, SortedKeyList, SortedListWithKey
+# from .sortedset import SortedSet
+# from .sorteddict import (
+#     SortedDict,
+#     SortedKeysView,
+#     SortedItemsView,
+#     SortedValuesView,
+# )
 
-
-from .sortedlist import SortedList, SortedKeyList, SortedListWithKey
-from .sortedset import SortedSet
-from .sorteddict import (
-    SortedDict,
-    SortedKeysView,
-    SortedItemsView,
-    SortedValuesView,
-)
-
-__all__ = [
-    'SortedList',
-    'SortedKeyList',
-    'SortedListWithKey',
-    'SortedDict',
-    'SortedKeysView',
-    'SortedItemsView',
-    'SortedValuesView',
-    'SortedSet',
-]
+# __all__ = [
+#     'SortedList',
+#     'SortedKeyList',
+#     'SortedListWithKey',
+#     'SortedDict',
+#     'SortedKeysView',
+#     'SortedItemsView',
+#     'SortedValuesView',
+#     'SortedSet',
+# ]
 
 __title__ = 'sortedcontainers'
 __version__ = '2.3.0'
