@@ -95,9 +95,9 @@ class ModuleImporter:
                 result += self.import_module(None, '.'.join(modules[:i + 1]))
 
             code = '_' + module_name.replace('.', '_') + '_code'
-            result += f'{code} = """\n'
+            result += f"{code} = '''\n"
             result += '\n'.join(lines)
-            result += '"""\n\n'
+            result += "'''\n\n"
             result += f"{module_name} = types.ModuleType('{module_name}')\n"
 
             # TODO(not): asname
